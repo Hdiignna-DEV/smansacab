@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kalender Akademik - SMAN 1 Cabangbungin</title>
+    <meta name="description" content="Jadwal lengkap kegiatan akademik dan hari libur SMAN 1 Cabangbungin.">
+    <meta name="keywords" content="Kalender Akademik, Jadwal Sekolah, Hari Libur Sekolah, SMAN 1 Cabangbungin">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sman1cabangbungin.sch.id/kalender-akademik.html">
+    <meta property="og:title" content="Kalender Akademik - SMAN 1 Cabangbungin">
+    <meta property="og:description" content="Jadwal lengkap kegiatan akademik dan hari libur SMAN 1 Cabangbungin.">
+    <meta property="og:image" content="https://www.sman1cabangbungin.sch.id/upload/imagecache/64340333LOGO-SMA(2)-600x563.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.sman1cabangbungin.sch.id/kalender-akademik.html">
+    <meta property="twitter:title" content="Kalender Akademik - SMAN 1 Cabangbungin">
+    <meta property="twitter:description" content="Jadwal lengkap kegiatan akademik dan hari libur SMAN 1 Cabangbungin.">
+    <meta property="twitter:image" content="https://www.sman1cabangbungin.sch.id/upload/imagecache/64340333LOGO-SMA(2)-600x563.png">
+
+    <link rel="icon" href="https://www.sman1cabangbungin.sch.id/upload/imagecache/90885436favicon-16x16-32x32.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div class="news-ticker">
+                <span class="news-ticker-label"><i class="fas fa-bullhorn"></i> BERITA TERKINI:</span>
+                <div class="news-ticker-content">
+                    <a href="#">HASIL PPDB 2025 TAHAP 1</a>
+                    <a href="#">DIES NATALIS XXII SMAN 1 CABANGBUNGIN TAHUN 2024</a>
+                    <a href="#">SOSIALISASI PPDB (PENERIMAAN PESERTA DIDIK BARU) TAHUN 2024</a>
+                </div>
+            </div>
+            <div class="datetime">
+                <i class="far fa-calendar-alt"></i> <span id="date"></span> | 
+                <i class="far fa-clock"></i> <span id="time"></span>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/64340333LOGO-SMA(2)-107x100.png" alt="SMAN 1 Cabangbungin Logo" class="school-logo">
+                    <div class="school-info">
+                        <h1>SMAN 1 CABANGBUNGIN</h1>
+                        <p>KABUPATEN BEKASI</p>
+                    </div>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <nav class="main-nav">
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="nav-item">
+                            <a href="index.html#beranda" class="nav-link">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="profil.html" class="nav-link">Profil</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="sejarah.html" class="dropdown-item">Sejarah</a></li>
+                                <li><a href="visi-misi.html" class="dropdown-item">Visi & Misi</a></li>
+                                <li><a href="struktur-organisasi.html" class="dropdown-item">Struktur Organisasi</a></li>
+                                <li><a href="data-guru.html" class="dropdown-item">Data Guru</a></li>
+                                <li><a href="data-tu.html" class="dropdown-item">Data TU</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kurikulum.html" class="nav-link active">Kurikulum</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="kalender-akademik.html" class="dropdown-item">Kalender Akademik</a></li>
+                                <li><a href="data-kelas.html" class="dropdown-item">Data Kelas</a></li>
+                                <li><a href="silabus.html" class="dropdown-item">Silabus</a></li>
+                                <li><a href="pbp.html" class="dropdown-item">PBP</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kesiswaan.html" class="nav-link">Kesiswaan</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="data-siswa.html" class="dropdown-item">Data Siswa</a></li>
+                                <li><a href="mpk.html" class="dropdown-item">MPK</a></li>
+                                <li><a href="osis.html" class="dropdown-item">OSIS</a></li>
+                                <li><a href="ekstrakurikuler.html" class="dropdown-item">Ekstrakurikuler</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="fasilitas.html" class="nav-link">Fasilitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="berita.html" class="nav-link">Berita</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html#kontak" class="nav-link">Kontak</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header py-5 bg-primary text-white text-center" style="margin-top: 100px;">
+        <div class="container" data-aos="fade-up">
+            <h2 class="text-white mb-0">Kalender Akademik</h2>
+            <p class="lead">Jadwal penting kegiatan belajar mengajar dan hari libur SMAN 1 Cabangbungin.</p>
+        </div>
+    </section>
+
+    <section class="kalender-akademik-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" data-aos="fade-up">
+                    <p class="mb-4">Kalender akademik ini memuat informasi lengkap mengenai jadwal awal dan akhir semester, ujian, libur nasional, serta kegiatan penting lainnya selama tahun ajaran.</p>
+                    
+                    <h3 class="text-primary mb-3">Tahun Ajaran 2024/2025</h3>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover shadow-sm rounded-lg overflow-hidden">
+                            <thead class="bg-primary text-white">
+                                <tr>
+                                    <th scope="col">Tanggal</th>
+                                    <th scope="col">Kegiatan</th>
+                                    <th scope="col">Keterangan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-aos="fade-up" data-aos-delay="100">
+                                    <td>15 Juli 2024</td>
+                                    <td>Awal Tahun Ajaran Baru</td>
+                                    <td>Hari pertama masuk sekolah semester ganjil</td>
+                                </tr>
+                                <tr data-aos="fade-up" data-aos-delay="150">
+                                    <td>17 Agustus 2024</td>
+                                    <td>Upacara HUT RI ke-79</td>
+                                    <td>Libur Nasional</td>
+                                </tr>
+                                <tr data-aos="fade-up" data-aos-delay="200">
+                                    <td>20 - 25 Oktober 2024</td>
+                                    <td>Ujian Tengah Semester Ganjil</td>
+                                    <td>Pelaksanaan ujian tengah semester</td>
+                                </tr>
+                                <tr data-aos="fade-up" data-aos-delay="250">
+                                    <td>25 Desember 2024</td>
+                                    <td>Libur Natal</td>
+                                    <td>Libur Nasional</td>
+                                </tr>
+                                <tr data-aos="fade-up" data-aos-delay="300">
+                                    <td>1 - 7 Januari 2025</td>
+                                    <td>Libur Semester Ganjil</td>
+                                    <td>Akhir semester ganjil</td>
+                                </tr>
+                                <tr data-aos="fade-up" data-aos-delay="350">
+                                    <td>8 Januari 2025</td>
+                                    <td>Awal Semester Genap</td>
+                                    <td>Hari pertama masuk sekolah semester genap</td>
+                                </tr>
+                                <tr data-aos="fade-up" data-aos-delay="400">
+                                    <td>10 Maret 2025</td>
+                                    <td>Perkiraan Libur Isra Mi'raj</td>
+                                    <td>Menyesuaikan pengumuman pemerintah</td>
+                                </tr>
+                                <tr data-aos="fade-up" data-aos-delay="450">
+                                    <td>10 - 15 April 2025</td>
+                                    <td>Ujian Akhir Semester Genap</td>
+                                    <td>Pelaksanaan ujian akhir semester</td>
+                                </tr>
+                                <tr data-aos="fade-up" data-aos-delay="500">
+                                    <td>21 April 2025</td>
+                                    <td>Pengumuman Kenaikan Kelas</td>
+                                    <td>Penerimaan rapor</td>
+                                </tr>
+                                <tr data-aos="fade-up" data-aos-delay="550">
+                                    <td>22 Juni 2025</td>
+                                    <td>Libur Kenaikan Kelas</td>
+                                    <td>Awal libur panjang akhir tahun ajaran</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <p class="mt-4 text-center text-gray">Perubahan jadwal dapat terjadi sewaktu-waktu. Mohon selalu merujuk pada pengumuman resmi sekolah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="https://www.sman1cabangbungin.sch.id/upload/imagecache/64340333LOGO-SMA(2)-107x100.png" alt="Logo SMAN 1 Cabangbungin" class="footer-logo">
+                    <p>SMAN 1 Cabangbungin adalah sekolah unggulan yang berkomitmen untuk memberikan pendidikan berkualitas kepada siswa.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-title">Link Penting</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#beranda">Beranda</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="kurikulum.html">Kurikulum</a></li>
+                        <li><a href="kesiswaan.html">Kesiswaan</a></li>
+                        <li><a href="fasilitas.html">Fasilitas</a></li>
+                        <li><a href="berita.html">Berita</a></li>
+                        <li><a href="index.html#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4 class="footer-title">Kontak Kami</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt footer-contact-icon"></i>
+                        <p>Jl. Raya Batujaya, Desa Lenggahjaya, Kec. Cabangbungin, Kab. Bekasi</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone footer-contact-icon"></i>
+                        <p>(021) 12345678</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope footer-contact-icon"></i>
+                        <p>info@sman1cabangbungin.sch.id</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 SMAN 1 Cabangbungin. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function() {
+            const backToTopButton = $('#backToTop');
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    backToTopButton.addClass('active');
+                } else {
+                    backToTopButton.removeClass('active');
+                }
+            });
+
+            backToTopButton.on('click', function() {
+                $('html, body').animate({ scrollTop: 0 }, 800);
+            });
+        });
+    </script>
+</body>
+</html>
